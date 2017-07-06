@@ -36,11 +36,11 @@ public:
   * Update the PID error variables given cross track error.
   */
   void UpdateError(double cte);
-
+  
   /*
-  * Calculate the total PID error.
+  * Calculate steering value
   */
-  double TotalError();
+  double CalculateSteeringValue();
 };
 
 #endif /* PID_H */
